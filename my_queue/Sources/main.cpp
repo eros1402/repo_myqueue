@@ -35,13 +35,13 @@ void test_int_queue ()
 
 	  queue = queue_create(15, &int_element_copy, &int_element_free, &int_element_print);
 
-	  queue_enqueue(queue, (q_element_t)a, 1);
-	  queue_enqueue(queue, (q_element_t)b, 1);
-	  queue_enqueue(queue, (q_element_t)c, 1);
+	  queue_enqueue(queue, (q_element_t)a);
+	  queue_enqueue(queue, (q_element_t)b);
+	  queue_enqueue(queue, (q_element_t)c);
 
-	  queue_enqueue(queue, (q_element_t)(&m), 1);
-	  queue_enqueue(queue, (q_element_t)(&n), 1);
-	  queue_enqueue(queue, (q_element_t)(&t), 1);
+	  queue_enqueue(queue, (q_element_t)(&m));
+	  queue_enqueue(queue, (q_element_t)(&n));
+	  queue_enqueue(queue, (q_element_t)(&t));
 
 	//  int i = 0;
 	//  for(i = 0; i < 20; i++){
@@ -182,4 +182,5 @@ int queue_element_compare(q_element_t x, q_element_t y)
 //
 //	if((((sensor_data_t *)x)->id == ((sensor_data_t *)y)->id) && (((sensor_data_t *)x)->value == ((sensor_data_t *)y)->id) && (((sensor_data_t *)x)->ts == ((sensor_data_t *)y)->ts)) return 0;
 //	else return 1;
+	return 0;
 }

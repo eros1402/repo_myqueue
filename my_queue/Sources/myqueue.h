@@ -50,9 +50,9 @@ queue_t* queue_create(const int QUEUE_SIZE, element_copy_func *element_copy, ele
 /*  
  **  Add an element to the queue
  **  If queue is full, do nothing when QUEUE_OVERIDE_FLAG = 0
- **                  & overwrite the rear element when QUEUE_OVEWRITE_FLAG = 1
+ **                  & overwrite the rear element when QUEUE_OVEWRITE_FLAG = 1 (default)
  */
-void queue_enqueue(queue_t* queue, q_element_t element, const int QUEUE_OVEWRITE_FLAG);
+void queue_enqueue(queue_t* queue, q_element_t element, const int QUEUE_OVEWRITE_FLAG = 1);
 
 /*
  **  Delete the queue from memory; set queue to NULL

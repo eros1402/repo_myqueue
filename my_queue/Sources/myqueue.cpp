@@ -11,7 +11,7 @@
  ============================================================================
  */
 
-#define _GNU_SOURCE
+//#define _GNU_SOURCE // This define is default in g++
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h> 
